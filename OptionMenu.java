@@ -119,11 +119,11 @@ public class OptionMenu extends Account {
                 getAccountType();
                 break;
             case 2:
-                getSavingingWithdrawInput();
+                getSavingWithdrawInput();
                 getAccountType();
                 break;
             case 3:
-                getSavingingWithdrawInput();
+                getSavingDepositInput();
                 getAccountType();
                 break;
             case 4:
