@@ -117,7 +117,7 @@ public class Account {
         System.out.println("Checking Account Balance: "+ moneyFormat.format(savingBalance));
         System.out.println("Amount you want to deposit from saving account");
         double amount=input.nextDouble();
-        if((savingBalance+amount) >=0 )
+        if((savingBalance + amount) >= 0)
         {
             calcSavingDeposit(amount);
             System.out.println("New saving account balance: "+moneyFormat.format(savingBalance));
