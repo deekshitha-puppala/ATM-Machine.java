@@ -74,13 +74,12 @@ public class Account {
             System.err.println("New Checking Account Balance: " + moneyFormat.format(checkingBalance));
         }
         else{
-            System.err.println("""
-                               Balance cannot be negative.
-                               """);
+                System.out.println("Balance is cannot be negative");
+
         }
     }
 
-    public void getSavingingWithdrawInput()
+    public void getSavingWithdrawInput()
     {
         System.out.println("Saving Account Balance: " + moneyFormat.format(savingBalance));
         System.out.println("Amount you want to withdraw from saving account: ");
@@ -92,9 +91,8 @@ public class Account {
             System.out.println("New Saving Account balance: "+ savingBalance + "\n");
         }
         else{
-            System.out.println("""
-                               Balance cannot be negative.
-                               """);
+                System.out.println("Balance is cannot be negative");
+
         }
     }
 
@@ -111,9 +109,22 @@ public class Account {
         }
         else
         {
-            System.out.println("""
-                               balance cannot be negative.
-                               """);
+            System.out.println("Balance is cannot be negative");
+        }
+    }
+    public void getSavingDepositeInput()
+    {
+        System.out.println("Checking Account Balance: "+ moneyFormat.format(savingBalance));
+        System.out.println("Amount you want to deposit from saving account");
+        double amount=input.nextDouble();
+        if((savingBalance+amount) >=0 )
+        {
+            calcSavingDeposit(amount);
+            System.out.println("New saving account balance: "+moneyFormat.format(savingBalance));
+        }
+        else
+        {
+            System.out.println("Balance is empty");
         }
     }
 
